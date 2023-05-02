@@ -141,11 +141,15 @@ function sumarLikesDeUsuario(objetoUsuario) {
    // Debes sumar los likes de todos los post y retornar el resultado.
    // Tu código:
    var sumaLikes = 0;
-      for (var i = 0; i < objetoUsuario.posts.length; i++){
-      sumaLikes += objetoUsuario.posts[i].likes;
-      } 
-   return sumaLikes;
-}
+    objetoUsuario.posts.forEach((post) => sumaLikes += post.likes)
+      return sumaLikes;
+    }
+    //)/* ; */
+    //  for (var i = 0; i < objetoUsuario.posts.length; i++){
+    //  sumaLikes += objetoUsuario.posts[i].likes;
+     // } 
+   //return sumaLikes; */
+
 
    
 function agregarMetodoCalculoDescuento(objetoProducto) {
